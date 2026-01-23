@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+topics:
+  payment: "payment.topic.1"
