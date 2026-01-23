@@ -13,11 +13,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PaymentService {
 
-    private final KafkaProduceService kafkaProduceService;
+    private final KafkaProducerService kafkaProducerService;
 
     public void cretePayment(PaymentRequest request) {
         try {
-            kafkaProduceService.sendMessage(request);
+            kafkaProducerService.sendMessage(request);
         } catch (JsonProcessingException e) {
             log.error("Error on send message to kafka: {}", e.getMessage());
         }
