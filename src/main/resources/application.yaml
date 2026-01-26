@@ -4,7 +4,7 @@ server:
 spring:
   kafka:
     listener:
-      missing-topics-fatal: true //sem essa config o app não sobe se o topico não estiver criado.
+      missing-topics-fatal: true #sem essa config o app não sobe se o topico não estiver criado.
     bootstrap-servers: localhost:9092
 
 topics:
