@@ -2,8 +2,6 @@ HELP.md
 target/
 .mvn/
 *.log*
-!**/src/main/**
-!**/src/test/**
 *example*
 *Example*
 
